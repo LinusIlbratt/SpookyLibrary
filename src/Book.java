@@ -4,11 +4,11 @@ public class Book {
     private String bookTitel;
     private String authorName;
     private String bookEdition;
-    private int yearPublished;
+    private String yearPublished;
     private boolean isBookAvailable;
 
     //
-    public Book(String bookTitel, String authorName, String bookEdition, int yearPublished, boolean isBookAvailable){
+    public Book(String bookTitel, String authorName, String bookEdition, String yearPublished, boolean isBookAvailable){
         this.bookTitel = bookTitel;
         this.authorName = authorName;
         this.bookEdition = bookEdition;
@@ -59,11 +59,11 @@ public class Book {
         this.bookEdition = bookEdition;
     }
 
-    public int getYearPublished() {
+    public String getYearPublished() {
         return yearPublished;
     }
 
-    public void setYearPublished(int yearPublished) {
+    public void setYearPublished(String yearPublished) {
         this.yearPublished = yearPublished;
     }
 
@@ -77,12 +77,7 @@ public class Book {
 
 
     public String toString(){
-        return "Bok{" +
-                "Titel='" + bookTitel + '\'' +
-                ", Författare='" + authorName + '\'' +
-                ", Utgivningsår=" + yearPublished +
-                ", Upplaga='" + bookEdition + '\'' +
-                ", Status=" + isBookAvailable +
-                '}';
+        return "--------------------------------------------------\nTitel: " +  bookTitel + "\nAuthor: " + authorName
+                + "\nYear Published: " + yearPublished + "\nBook Edition: " + bookEdition +"\n--------------------------------------------------";
     }
 }
