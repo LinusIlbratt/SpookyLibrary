@@ -40,8 +40,8 @@ public class Main {
                     System.out.println("Enter the name of the author: ");
                     String authorName = sc.nextLine();
                     System.out.println("Enter the year it was published: ");
-                    int yearPublished = sc.nextInt();
-                    sc.nextLine();
+                    String yearPublished = sc.nextLine();
+
                     System.out.println("Enter the edition: ");
                     String bookEdition = sc.nextLine();
                     boolean isBookAvailable = true;
